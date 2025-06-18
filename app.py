@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 def load_traffic_data():
     global traffic_df
+    print("STANDBY\n")
     print("Loading Austin Traffic Data...")
     traffic_df = pd.read_csv("atxtraffic.csv")
     print(f"Loaded {len(traffic_df)} rows into memory.")
